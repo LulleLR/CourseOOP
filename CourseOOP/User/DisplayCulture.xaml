@@ -1,0 +1,33 @@
+﻿<Window x:Class="CourseOOP.User.DisplayCulture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseOOP.User"
+        mc:Ignorable="d"
+        Title="Culture" Height="450" Width="800" PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="578,349,0,0" VerticalAlignment="Top" Height="51" Width="172" FontSize="24" Click="btnCancel_Click"/>
+        <Label x:Name="lblName" Content="Name of culture:" HorizontalAlignment="Left" Margin="31,45,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblAuthor" Content="Author name:" HorizontalAlignment="Left" Margin="31,94,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblParent" Content="Parent variety:" HorizontalAlignment="Left" Margin="31,146,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblProductivity" Content="Productivity:" HorizontalAlignment="Left" Margin="31,195,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblFrost" Content="Frost resistance:" HorizontalAlignment="Left" Margin="31,244,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblImmunity" Content="Immunity:" HorizontalAlignment="Left" Margin="31,292,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblFund" Content="Selection fund:" HorizontalAlignment="Left" Margin="31,343,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxSpecification" HorizontalAlignment="Left" Height="171" Margin="400,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontSize="20" AutomationProperties.HelpText="Something"/>
+        <Label x:Name="lblSpecification" Content="Specification" HorizontalAlignment="Left" Margin="399,45,0,0" VerticalAlignment="Top" FontSize="24" Height="38"/>
+        <Label x:Name="lblCultureNameOut" Content="" HorizontalAlignment="Left" Margin="207,45,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblAuthorOut" Content="Unknown" HorizontalAlignment="Left" Margin="207,94,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblParentOut" Content="Unknown" HorizontalAlignment="Left" Margin="207,146,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblProductivityOut" Content="" HorizontalAlignment="Left" Margin="207,195,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblFrostResistanceOut" Content="" HorizontalAlignment="Left" Margin="207,244,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblImmunityOut" Content="" HorizontalAlignment="Left" Margin="207,292,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblFundOut" Content="Unknown" HorizontalAlignment="Left" Margin="207,343,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="btnWriteToFile" Content="Write to file" HorizontalAlignment="Left" Margin="400,349,0,0" VerticalAlignment="Top" Height="51" Width="172" FontSize="24" Click="btnWriteToFile_Click"/>
+        <Label x:Name="lblHelp" Content="Press F1 for help" HorizontalAlignment="Left" Margin="651,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddToFavourites" Content="Add to favourites" HorizontalAlignment="Left" Margin="400,259,0,0" VerticalAlignment="Top" Height="40" Width="350" FontSize="24" Click="btnAddToFavourites_Click"/>
+        <Button x:Name="btnDeleteFromFavourites" Content="Delete from favourites" HorizontalAlignment="Left" Margin="401,304,0,0" VerticalAlignment="Top" Height="40" Width="349" FontSize="24" Click="btnDeleteFromFavourites_Click"/>
+
+    </Grid>
+</Window>

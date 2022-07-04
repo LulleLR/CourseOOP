@@ -1,0 +1,39 @@
+﻿<Window x:Class="CourseOOP.UserPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseOOP"
+        mc:Ignorable="d"
+        Title="User panel" Height="450" Width="800" PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <Label x:Name="lblCultures" Content="Cultures" HorizontalAlignment="Left" Margin="34,13,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxCultures" HorizontalAlignment="Left" Margin="34,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" Height="186" FontSize="20"/>
+        <Label x:Name="lblSearchName" Content="Search culture by name" HorizontalAlignment="Left" Margin="281,57,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxSearchName" HorizontalAlignment="Left" Margin="283,104,0,0" TextWrapping="Wrap" Text="Name of culture" VerticalAlignment="Top" Width="191" Height="36" FontSize="20"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="283,144,0,0" VerticalAlignment="Top" Height="46" Width="130" FontSize="24" Click="btnSearch_Click"/>
+        <Label x:Name="lblSearchCultureByFeature" Content="Search culture by feature" HorizontalAlignment="Left" Margin="280,205,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxSearchFeature" HorizontalAlignment="Left" Margin="303,293,0,0" TextWrapping="Wrap" Text="Author" VerticalAlignment="Top" Width="186" Height="39" FontSize="20"/>
+        <Button x:Name="btnSearchFeature" Content="Search" HorizontalAlignment="Left" Margin="303,337,0,0" VerticalAlignment="Top" Height="47" Width="130" FontSize="24" Click="btnSearchFeature_Click"/>
+        <Label x:Name="lblHistory" Content="Search history" HorizontalAlignment="Left" Margin="564,150,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxHistory" HorizontalAlignment="Left" Margin="554,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="187" FontSize="20"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="303,252,0,0" VerticalAlignment="Top" Width="186" FontSize="20" SelectionChanged="comboBox_SelectionChanged" SelectedIndex="0" Height="35">
+            <Label Content="Author" FontSize="20"/>
+            <Label Content="Parent variety" FontSize="20"/>
+            <Label Content="Productivity" FontSize="20"/>
+            <Label Content="Specification" FontSize="20"/>
+            <Label Content="Frost resistance" FontSize="20"/>
+            <Label Content="Immunity" FontSize="20"/>
+            <Label Content="Selection fund" FontSize="20"/>
+        </ComboBox>
+        <Label x:Name="lblOpenName" Content="Display culture by name" HorizontalAlignment="Left" Margin="34,251,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxDisplay" HorizontalAlignment="Left" Margin="34,299,0,0" TextWrapping="Wrap" Text="Name of culture" VerticalAlignment="Top" Width="191" Height="36" FontSize="20"/>
+        <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="34,340,0,0" VerticalAlignment="Top" Height="44" Width="130" FontSize="24" Click="btnDisplay_Click"/>
+        <Label x:Name="lblAddRequest" Content="Send request" HorizontalAlignment="Left" Margin="554,20,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxRequest" HorizontalAlignment="Left" Margin="554,68,0,0" TextWrapping="Wrap" Text="Your request" VerticalAlignment="Top" Width="191" Height="36" FontSize="20"/>
+        <Button x:Name="btnSendRequest" Content="Send request" HorizontalAlignment="Left" Margin="554,109,0,0" VerticalAlignment="Top" Height="41" Width="154" FontSize="24" Click="btnSendRequest_Click"/>
+        <Label x:Name="lblHelp" Content="Press F1 for help" HorizontalAlignment="Left" Margin="647,13,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnFavourites" Content="Favourites" HorizontalAlignment="Left" Margin="136,16,0,0" VerticalAlignment="Top" Height="35" Width="115" FontSize="24" Click="btnFavourites_Click"/>
+
+    </Grid>
+</Window>

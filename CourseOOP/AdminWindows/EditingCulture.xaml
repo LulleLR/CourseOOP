@@ -1,0 +1,32 @@
+﻿<Window x:Class="CourseOOP.EditingCulture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseOOP"
+        mc:Ignorable="d"
+        Title="EditingCulture" Height="450" Width="800" PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="583,349,0,0" VerticalAlignment="Top" Height="51" Width="166" FontSize="24" Click="btnCancel_Click"/>
+        <Label x:Name="lblName" Content="Name of culture" HorizontalAlignment="Left" Margin="31,45,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblAuthor" Content="Author name" HorizontalAlignment="Left" Margin="31,94,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxAuthor" HorizontalAlignment="Left" Margin="213,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="24"/>
+        <Label x:Name="lblParent" Content="Parent variety" HorizontalAlignment="Left" Margin="31,146,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxParent" HorizontalAlignment="Left" Margin="213,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="24"/>
+        <Label x:Name="lblProductivity" Content="Productivity" HorizontalAlignment="Left" Margin="31,195,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxProductivity" HorizontalAlignment="Left" Margin="213,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="24"/>
+        <Label x:Name="lblFrost" Content="Frost resistance" HorizontalAlignment="Left" Margin="31,244,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxFrost" HorizontalAlignment="Left" Margin="213,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="24"/>
+        <Label x:Name="lblImmunity" Content="Immunity" HorizontalAlignment="Left" Margin="31,292,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxImmunity" HorizontalAlignment="Left" Margin="213,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="24"/>
+        <Label x:Name="lblFund" Content="Selection fund" HorizontalAlignment="Left" Margin="31,343,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtBxFund" HorizontalAlignment="Left" Margin="213,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="24"/>
+        <TextBox x:Name="txtBxSpecification" HorizontalAlignment="Left" Height="246" Margin="399,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="350" FontSize="20" AutomationProperties.HelpText="Something"/>
+        <Label x:Name="lblSpecification" Content="Specification" HorizontalAlignment="Left" Margin="399,45,0,0" VerticalAlignment="Top" FontSize="24" Height="38"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="399,349,0,0" VerticalAlignment="Top" Height="51" Width="166" FontSize="24" Click="btnSubmit_Click"/>
+        <Label x:Name="lblCultureName" Content="" HorizontalAlignment="Left" Margin="207,45,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="btnDelete" Content="Delete culture" HorizontalAlignment="Left" Margin="583,45,0,0" VerticalAlignment="Top" Height="35" Width="166" FontSize="24" Foreground="#FFDA0000" Click="btnDelete_Click"/>
+        <Label x:Name="lblHelp" Content="Press F1 for help" HorizontalAlignment="Left" Margin="651,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
